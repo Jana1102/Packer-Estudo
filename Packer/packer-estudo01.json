@@ -1,0 +1,30 @@
+{
+    "builders": [
+      {
+        "type": "amazon-ebs",
+        "region": "us-east-1",
+        "source_ami_filter": {
+            "filters":{
+              "virtualization-type": "hvm",
+              "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
+              "root-device-type": "ebs"
+            },
+            "owners": ["099720109477"],
+            "most_recent": "true"
+          },  
+        "instance_type": "t2.micro",
+        "ssh_username": "ubuntu",
+        "vpc_id": "vpc-0eecad076110366d3",
+        "subnet_id": "subnet-06236d5d57fa2cc45",
+        "ami_name": "packer_AWS {{timestamp}}",
+        "ami_description": "descricao da minha AMI {{.SourceAMI}}",
+        "tags": {
+          "OS_Version": "Ubuntu",
+          "Release": "Latest",
+          "Departamento": "RH",
+          "Base_AMI_Name": "{{ .SourceAMIName }}",
+          "Extra": "{{ .SourceAMITags.TagName }}"
+        }
+      }
+    ]
+  }
