@@ -20,7 +20,7 @@ AWS CLI
 
 # Builders
 
-É obrigatorio a sessão "builders" no Packer aonde tem as informações sobre a IMG. 
+É obrigatorio "builders" no Packer aonde tem as informações sobre a IMG. 
 Quando executo o build do packer-estudo01.json. Ele cria uma instancia temporia na AWS e bate uma foto,
 criando minha IMG. E depois exclui essa instancia, deixando apenas minha IMG na conta da AWS.
 
