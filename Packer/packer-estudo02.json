@@ -12,8 +12,8 @@
             "owners": ["099720109477"],
             "most_recent": true
           },
-        "vpc_id": "vpc-0eecad076110366d3",
-        "subnet_id": "subnet-06236d5d57fa2cc45",    
+        "vpc_id": "vpc-xxxxxxxxx",
+        "subnet_id": "subnet-xxxxxxxxxxx",    
         "instance_type": "t2.micro",
         "ssh_username": "ubuntu",
         "ami_name": "packer_AWS {{timestamp}}",
