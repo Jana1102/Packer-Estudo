@@ -37,7 +37,7 @@
     "provisioners": [
       {
         "type": "ansible",
-        "playbook_file": "./playbook-estudo02.yaml",
+        "playbook_file": "./playbook-estudo02-k8s.yaml",
         "user": "ubuntu",
         "extra_arguments": [
           "--extra-vars",
