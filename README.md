@@ -24,8 +24,17 @@ AWS CLI
 Quando executo o build do packer-estudo01.json. Ele cria uma instancia temporia na AWS e bate uma foto,
 criando minha IMG. E depois exclui essa instancia, deixando apenas minha IMG na conta da AWS.
 
-# Deploy
-        packer build packer.json
+# Deploy packer-estudo01.json
+        packer build packer-estudo01.json
+	
+# Deploy packer-02-k8s
+	packer build packer-estudo02.json
+	
+# Deploy packer-estudo03-var
+	packer build packer-estudo03-var.json
+	
+# Deploy packer-estudo04-var-file
+	packer build -var-file=variables.json packer-estudo04-var-file.json
 
 # Ansible Provisioners
 
