@@ -47,3 +47,6 @@ Existe 2 formas de usam o Ansible no Packer. Na máquina temporária (local) ou 
         packer build -var-file=variables.json -on-error=ask packer-eestudo04-var-file.json        
 
         PACKER_LOG=1 packer build -var-file=variables packer-estudo04-var-file.json
+
+# Listando módulos
+	ansible-doc -l
