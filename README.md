@@ -50,3 +50,6 @@ Existe 2 formas de usam o Ansible no Packer. Na máquina temporária (local) ou 
 
 # Listando módulos
 	ansible-doc -l
+	
+# Listando módulo específico
+	ansible-doc aws_s3
